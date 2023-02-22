@@ -11,11 +11,15 @@ El objetivo principal es crear una aplicación en este caso de tipo web donde po
 
 # Subobjetivos
 
--Poder filtrar la oferta de trabajo que tu quieras en función de unos requisitos.
+-Poder filtrar la oferta de trabajo que tu quieras en función de unos requisitos.  
+
 -Consultar información referente a la base de datos de ofertas más buscadas, últimas búsquedas…
 
 # Casos de uso
 
--Buscar ofertas de trabajo
--Generar análisis de la base de datos
--Poder filtrar el tipo de trabajo
+-Buscar ofertas de trabajo  
+
+-Generar análisis de la base de datos  
+
+-Poder filtrar el tipo de trabajo  
+
