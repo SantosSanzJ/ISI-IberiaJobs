@@ -36,9 +36,9 @@ El Service available market sería la cantidad de dinero generada por la venta d
 
 # Perfil Cliente
 Podemos separar principalmente 3 categorías de clientes:
-* Fondos de inversión: La información generada por nuestro negocio le dará ventaja estratégica a los fondos de inversión, permitiendo predecir las tendencias de mercado comparando las actuales de España con las pasadas de USA.
-* Academias: Les interesará conocer las siguientes tecnologías en boga para poder realizar bootcamps y clases sobre estas.
-* Especialistas: Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo.
+* **Fondos de inversión:** La información generada por nuestro negocio le dará ventaja estratégica a los fondos de inversión, permitiendo predecir las tendencias de mercado comparando las actuales de España con las pasadas de USA.
+* **Academias:** Les interesará conocer las siguientes tecnologías en boga para poder realizar bootcamps y clases sobre estas.
+* **Especialistas:** Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo.
 
 # Business model canvas
 ![imagen](https://user-images.githubusercontent.com/114731007/220731554-dddcb03d-c0cc-4e46-a756-5debf56cf9b9.png)
