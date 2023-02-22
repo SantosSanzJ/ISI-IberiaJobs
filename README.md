@@ -3,7 +3,9 @@ Best Searcher for IT jobs in Spain
 
 # Integrantes
 Javier Santos Sanz: Testing
+
 Joaquín Sierra Granados: Backend
+
 Álvaro Ruiz Roldán: Frontend
 # Motivación
 
