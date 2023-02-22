@@ -1,6 +1,10 @@
 # IberiaJobs
 Best Searcher for IT jobs in Spain
 
+# Integrantes
+Javier Santos Sanz: Testing
+Joaquín Sierra Granados: Backend
+Álvaro Ruiz Roldán: Frontend
 # Motivación
 
 Poder ofrecer un entorno intuitivo para llevar a cabo búsquedas de trabajo para ingenieros tanto de España como fuera de ella, de esta forma facilitando la búsqueda y el tiempo de búsqueda de este tipo de trabajo.
@@ -17,11 +21,26 @@ El objetivo principal es crear una aplicación en este caso de tipo web donde po
 
 # Casos de uso
 
--Buscar ofertas de trabajo  
+* Buscar ofertas de trabajo.
 
--Generar análisis de la base de datos  
+* Generar análisis de la base de datos.
 
--Poder filtrar el tipo de trabajo  
+* Poder filtrar el tipo de trabajo.
+
+# TAM
+El Total available market sería la cantidad de dinero generada por la venta de datos relacionado con las ofertas de trabajo relacionadas con la tecnología.
+# SAM
+El Service available market sería la cantidad de dinero generada por la venta de datos relacionado con las ofertas de trabajo relacionadas con la tecnología en España.
+
+# Perfil Cliente
+Podemos separar principalmente 3 categorías de clientes:
+* Fondos de inversión: La información generada por nuestro negocio le dará ventaja estratégica a los fondos de inversión, permitiendo predecir las tendencias de mercado comparando las actuales de España con las pasadas de USA.
+* Academias: Les interesará conocer las siguientes tecnologías en boga para poder realizar bootcamps y clases sobre estas.
+* Especialistas: Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo.
+
+# Business model canvas
+![imagen](https://user-images.githubusercontent.com/114731007/220731554-dddcb03d-c0cc-4e46-a756-5debf56cf9b9.png)
+
 
 # Customer Journey
 
