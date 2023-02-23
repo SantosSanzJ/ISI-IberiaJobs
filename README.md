@@ -41,7 +41,7 @@ Estimamos que nuestro negocio podrá hacer negocio con los siguientes clientes:
 * **Empresas IT** Creemos que podemos brindar servicio a un 1% de las empresas tecnológicas, siendo en total 729 empresas.
 * **Fondos de inversión:** Podemos servir a fondos cuyo monton combinado sea de un 0,5% de la inversión, siendo 250 millones de euros. Variando cuánto van a pagar dependiendo del dinero del fondo.
 * **Profesionales:** Creemos que podremos dar servicio al menos a un 5% de todos los profesionales, siendo en total 68620 profesionales.
-* **Academias**: Creemos que al ser tan dependientes del auge de tecnologías, podemos esperar realizar negocios con al menos un 10 centros con bootcamps.
+* **Academias**: Creemos que al ser tan dependientes del auge de tecnologías, podemos esperar realizar negocios con al menos 10 centros con bootcamps.
 
 # Perfil Cliente
 Podemos separar principalmente 3 categorías de clientes:
