@@ -30,15 +30,25 @@ El objetivo principal es crear una aplicación en este caso de tipo web donde po
 * Poder filtrar el tipo de trabajo.
 
 # TAM
-El Total available market sería la cantidad de dinero generada por la venta de datos relacionado con las ofertas de trabajo relacionadas con la tecnología.
+Al tener cuatro tipos de clientes será el TAM todo el mercado que existe relacionado con estos:
+* **Empresas IT en España:** Existiendo 72.857 empresas tecnológicas en 2020.
+* **Fondos de inversión:** Decir el número de inversores no lo consideramos tan relevante como la masa monetaria invertida en el sector, que en la actualidad se trata de 50.000 millones de euros.
+* **Profesionales:** Existiendo en la actualidad un total de 1.372.400 profesionales en este ámbito.
+* **Academias:** Existen 35 centros de bootcamp en España.
+
 # SAM
-El Service available market sería la cantidad de dinero generada por la venta de datos relacionado con las ofertas de trabajo relacionadas con la tecnología en España.
+Estimamos que nuestro negocio podrá hacer negocio con los siguientes clientes:
+* **Empresas IT** Creemos que podemos brindar servicio a un 1% de las empresas tecnológicas, siendo en total 729 empresas.
+* **Fondos de inversión:** Podemos servir a fondos cuyo monton combinado sea de un 0,5% de la inversión, siendo 250 millones de euros. Variando cuánto van a pagar dependiendo del dinero del fondo.
+* **Profesionales:** Creemos que podremos dar servicio al menos a un 5% de todos los profesionales, siendo en total 68620 profesionales.
+* **Academias**: Creemos que al ser tan dependientes del auge de tecnologías, podemos esperar realizar negocios con al menos un 10 centros con bootcamps.
 
 # Perfil Cliente
 Podemos separar principalmente 3 categorías de clientes:
+* **Empresas IT**: La información aportada será muy util para saber en qué tecnologías formar a sus empleados y en las que realizar sus proyectos.
 * **Fondos de inversión:** La información generada por nuestro negocio le dará ventaja estratégica a los fondos de inversión, permitiendo predecir las tendencias de mercado comparando las actuales de España con las pasadas de USA.
 * **Academias:** Les interesará conocer las siguientes tecnologías en boga para poder realizar bootcamps y clases sobre estas.
-* **Especialistas:** Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo.
+* **Especialistas:** Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo, debido a que son novatos o quieren realizar un cambio en el trabajo.
 
 # Business model canvas
 ![imagen](https://user-images.githubusercontent.com/114731007/220731554-dddcb03d-c0cc-4e46-a756-5debf56cf9b9.png)
@@ -46,8 +56,6 @@ Podemos separar principalmente 3 categorías de clientes:
 
 # Customer Journey
 ![Captura](https://user-images.githubusercontent.com/55651737/220865874-6dd84004-c59c-4525-8078-d5dbde5c08d8.PNG)
-
-
 
 # KPIs
 
@@ -64,13 +72,12 @@ Los KPI’s pueden ser de mediadas objetivas de la empresa muy específicas y de
 * Redes Sociales:
   * Número de visitas en nuestras redes sociales
 * Venta de información:
-  * cuantía fija de los ingresos en la venta de datos
+  * Cuantía fija de los ingresos en la venta de datos
 
 # OKR
 * Aumentar las ganancias de la empresa en un 20% en un año.
-* Aumentar las visitas a nuestra página un 30% en tres meses.
+* Tener 200.000 visitas en nuestra página web en un año.
 * Añadir 100 jobs nuevos en el periodo de un año.
 * Mantener nuestro posicionamiento de nuestra página web siendo esta la primera en la página de Google durante los próximos 5 años.
-* Aumentar nuestras visitas en redes sociales un 50% en tres años.
+* Tener al menos 500.000 de visitas en nuestras redes sociales.
 * Tener más comentarios positivos que negativos en el 80% de nuestros Jobs.
-
