@@ -1,5 +1,5 @@
 # IberiaJobs
-Best Searcher for IT jobs in Spain
+Best Searcher for IT jobs in Spain.
 
 # Integrantes
 Javier Santos Sanz: Testing
@@ -51,7 +51,8 @@ Podemos separar principalmente 3 categorías de clientes:
 * **Especialistas:** Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo, debido a que son novatos o quieren realizar un cambio en el trabajo.
 
 # Business model canvas
-![imagen](https://user-images.githubusercontent.com/114731007/220731554-dddcb03d-c0cc-4e46-a756-5debf56cf9b9.png)
+
+![BMI•Business-model-canvas](https://user-images.githubusercontent.com/114731007/221013450-e6e27978-a2be-43aa-b30c-f0324d43e78a.png)
 
 
 # Customer Journey
