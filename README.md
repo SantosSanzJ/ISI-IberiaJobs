@@ -38,14 +38,14 @@ Al tener cuatro tipos de clientes será el TAM todo el mercado que existe relaci
 
 # SAM
 Estimamos que nuestro negocio podrá hacer negocio con los siguientes clientes:
-* **Empresas IT** Creemos que podemos brindar servicio a un 1% de las empresas tecnológicas, siendo en total 729 empresas.
+* **Empresas IT:** Creemos que podemos brindar servicio a un 1% de las empresas tecnológicas, siendo en total 729 empresas.
 * **Fondos de inversión:** Podemos servir a fondos cuyo monton combinado sea de un 0,5% de la inversión, siendo 250 millones de euros. Variando cuánto van a pagar dependiendo del dinero del fondo.
 * **Profesionales:** Creemos que podremos dar servicio al menos a un 5% de todos los profesionales, siendo en total 68620 profesionales.
 * **Academias**: Creemos que al ser tan dependientes del auge de tecnologías, podemos esperar realizar negocios con al menos 10 centros con bootcamps.
 
 # Perfil Cliente
 Podemos separar principalmente 3 categorías de clientes:
-* **Empresas IT**: La información aportada será muy util para saber en qué tecnologías formar a sus empleados y en las que realizar sus proyectos.
+* **Empresas IT:** La información aportada será muy util para saber en qué tecnologías formar a sus empleados y en las que realizar sus proyectos.
 * **Fondos de inversión:** La información generada por nuestro negocio le dará ventaja estratégica a los fondos de inversión, permitiendo predecir las tendencias de mercado comparando las actuales de España con las pasadas de USA.
 * **Academias:** Les interesará conocer las siguientes tecnologías en boga para poder realizar bootcamps y clases sobre estas.
 * **Especialistas:** Conocer las tecnologías que se harán famosas en el mercado laboral para poder adaptarse a este con tiempo, debido a que son novatos o quieren realizar un cambio en el trabajo.
@@ -63,22 +63,27 @@ Podemos separar principalmente 3 categorías de clientes:
 Los KPI’s pueden ser de mediadas objetivas de la empresa muy específicas y de otras más generales así que vamos a separarlos en diferentes categorías para que se diferencien bien:
 * Comentarios:
   * % de comentarios positivos
-  * Número de comentarios en general
+  * Número de comentarios en general.
 * Posicionamiento en la web:
-  * Número de visitas a nuestra página
-  * % de empresas tecnologicas españolas que visitan nuestra página
+  * Número de visitas a nuestra página.
+  * % de empresas tecnologicas españolas que visitan nuestra página.
 * Jobs:
-  * Número de Jobs de nuestra página
-  * Número de visitas de cada categoría de jobs
+  * Número de Jobs de nuestra página.
+  * Número de visitas de cada categoría de jobs.
 * Redes Sociales:
-  * Número de visitas en nuestras redes sociales
+  * Número de visitas en nuestras redes sociales.
 * Venta de información:
-  * Cuantía fija de los ingresos en la venta de datos
+  * Cuantía fija de los ingresos en la venta de datos.
 
 # OKR
-* Aumentar las ganancias de la empresa en un 20% en un año.
+* Tener más comentarios positivos que negativos en el 80% de nuestros Jobs.
+* Tener al menos 10.000 comentarios sumando todos los Jobs.
+
 * Tener 200.000 visitas en nuestra página web en un año.
+* Tener al menos 1.000 empresas españolas que visitan nuestra página.
+
 * Añadir 100 jobs nuevos en el periodo de un año.
+* Tener al menos 10.000 visitas en cada categoría de Job.
 * Mantener nuestro posicionamiento de nuestra página web siendo esta la primera en la página de Google durante los próximos 5 años.
 * Tener al menos 500.000 de visitas en nuestras redes sociales.
-* Tener más comentarios positivos que negativos en el 80% de nuestros Jobs.
+* Ganar 200.000 euros en la venta de datos en un año.
