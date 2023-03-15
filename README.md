@@ -87,3 +87,43 @@ Los KPI’s pueden ser de mediadas objetivas de la empresa muy específicas y de
 * Mantener nuestro posicionamiento de nuestra página web siendo esta la primera en la página de Google durante los próximos 5 años.
 * Tener al menos 500.000 de visitas en nuestras redes sociales.
 * Ganar 200.000 euros en la venta de datos en un año.
+
+# CONTRATO MERCANTIL
+Contrato mercantil de desarrollo de servicios.
+Está dividido en varias secciones:
+*	Objeto: Se desarrollará una web en la cual deberás registrarte para disfrutar de diferentes servicios como el de saber cuales son las tecnologías más influyentes en las empresas actuales, búsquedas de empresas tanto en España como en Estados Unidos y obtener información de diferentes empresas.
+*	Plazo: Duración del contrato desde el 30/01/2023 hasta el 05/05/2023 donde se finalizará con la presentación del proyecto.
+*	Precio: Costo de los 3 desarrolladores más el coste de utilizar las API’s, coste de comprar el dominio y el coste de la compra del servidor y su mantenimiento.  
+*	Obligaciones del contratista: El contratista, que en este caso son los tres desarrolladores, tiene la obligación de desarrollar los servicios acordados en el contrato en el plazo establecido y conforme a las especificaciones y estándares de calidad acordados.
+*	Obligaciones del contratante: El contratante debe pagar al contratista el precio acordado en el contrato, debe proporcionar al contratista toda la información necesaria para que este último pueda crear y desarrollar el servicio acordado de manera efectiva y debe cumplir con los plazos y fechas establecidos en el contrato. Las demás obligaciones viene recabadas en los demás puntos del contrato mercantil.
+*	Propiedad intelectual: El titular de los derechos de propiedad intelectual sobre los servicios desarrollados es el contratante de este contrato mercantil.
+*	Confidencialidad: Se establece en este contrato que tanto los contratistas como el contratante deberán mantener todos los datos y servicios de este proyecto en confidencialidad.
+*	Garantías: El contratista se compromete a que los servicios desarrollados cumplirán con los estándares de calidad acordados en el contrato, a entregar los servicios en el plazo acordado y conforme a las especificaciones del contrato, garantiza que los servicios desarrollados no infringen los derechos de propiedad intelectual de terceros, se compromete a brindar soporte y mantenimiento a los servicios desarrollados durante un período determinado después de su entrega y garantiza que toda la información confidencial del contratante será manejada de manera segura y confidencial ya definida en el anterior punto.
+
+Requisitos definidos del servicio a desarrollar:
+-	Base de datos amplia para una búsqueda amplia de las empresas de la aplicación.
+-	El servicio debe permitir a los usuarios realizar búsquedas avanzadas y filtrar los resultados por ubicación, tecnologías usadas, etc.
+-	El servicio debe ser accesible desde la web.
+-	La información proporcionada por el servicio debe ser precisa y actualizada constantemente.
+-	Se deben usar una API’s y webscraping para conseguir la información de los empleos tanto de estados Unidos como de España.
+-	El servicio debe tener una seguridad mínima como por ejemplo que no se puedan introducir scripts a través de la barra de búsqueda ni en el login.
+
+# Arquitectura global del proyecto
+![Diagrama de arquitectura del sistema drawio](https://user-images.githubusercontent.com/55651737/225420791-3bfa5ced-b2af-4ddc-a88a-e87e860b80f5.png)
+
+# TECNOLOGÍAS A USAR
+Presentaremos las tecnologías que vamos a usar en el proyecto y que hemos pensado que son las más adecuadas:
+## Frontend:
+-	HTML5
+-	CSS3
+-	JAVASCRIPT
+## Backend:
+-	SQL
+-	JAVASCRIPT
+-	PYTHON
+## Base de datos:
+-	MySQL
+## Estructuras de datos:
+-	JSON
+-	PDF
+
