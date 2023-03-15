@@ -3,7 +3,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-#PATH = r'C:\Users\03961465\PycharmProjects\webScraping\Prueba'
 driver = webdriver.Firefox()
 
 driver.get('https://www.empleate.gob.es/empleo/#/')
