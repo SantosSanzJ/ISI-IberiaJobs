@@ -127,3 +127,8 @@ Presentaremos las tecnologías que vamos a usar en el proyecto y que hemos pensa
 -	JSON
 -	PDF
 
+# Mockup de GUI y user experience
+
+![Main](https://user-images.githubusercontent.com/91948162/225427612-891943f1-d22d-47e2-88ba-c9168ef539a3.png)
+
+La página web presenta un diseño minimalista e intuitivo de fácil uso, la unica interacción del usuario es con el cuadro de busqueda. La información referente a las comparativas de trabajos se muestran haciendo "scroll" en la página.
