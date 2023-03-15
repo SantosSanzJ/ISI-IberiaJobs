@@ -91,7 +91,7 @@ Los KPI’s pueden ser de mediadas objetivas de la empresa muy específicas y de
 # CONTRATO MERCANTIL
 Contrato mercantil de desarrollo de servicios.
 Está dividido en varias secciones:
-*	Objeto: Se desarrollará una web en la cual deberás registrarte para disfrutar de diferentes servicios como el de saber cuales son las tecnologías más influyentes en las empresas actuales, búsquedas de empresas tanto en España como en Estados Unidos y obtener información de diferentes empresas.
+*	Objeto: Se desarrollará una web la cual tiene diferentes servicios como el de saber cuales son las tecnologías más influyentes en las empresas actuales, búsquedas de empresas tanto en España como en Estados Unidos y obtener información de diferentes empresas.
 *	Plazo: Duración del contrato desde el 30/01/2023 hasta el 05/05/2023 donde se finalizará con la presentación del proyecto.
 *	Precio: Costo de los 3 desarrolladores más el coste de utilizar las API’s, coste de comprar el dominio y el coste de la compra del servidor y su mantenimiento.  
 *	Obligaciones del contratista: El contratista, que en este caso son los tres desarrolladores, tiene la obligación de desarrollar los servicios acordados en el contrato en el plazo establecido y conforme a las especificaciones y estándares de calidad acordados.
