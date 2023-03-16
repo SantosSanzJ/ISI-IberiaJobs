@@ -109,7 +109,8 @@ Requisitos definidos del servicio a desarrollar:
 -	El servicio debe tener una seguridad mínima como por ejemplo que no se puedan introducir scripts a través de la barra de búsqueda ni en el login.
 
 # Arquitectura global del proyecto
-![Diagrama de arquitectura del sistema drawio](https://user-images.githubusercontent.com/55651737/225420791-3bfa5ced-b2af-4ddc-a88a-e87e860b80f5.png)
+![Diagrama de arquitectura del sistema drawio (1)](https://user-images.githubusercontent.com/55651737/225561055-626dc162-820d-4496-8241-b63c88dfb1d5.png)
+
 
 # TECNOLOGÍAS A USAR
 Presentaremos las tecnologías que vamos a usar en el proyecto y que hemos pensado que son las más adecuadas:
@@ -129,6 +130,7 @@ Presentaremos las tecnologías que vamos a usar en el proyecto y que hemos pensa
 
 # Mockup de GUI y user experience
 
-![Main](https://user-images.githubusercontent.com/91948162/225427612-891943f1-d22d-47e2-88ba-c9168ef539a3.png)
+![Uploading Diagrama de arquitectura del sistema.drawio (1).png…]()
+
 
 La página web presenta un diseño minimalista e intuitivo de fácil uso, la unica interacción del usuario es con el cuadro de busqueda. La información referente a las comparativas de trabajos se muestran haciendo "scroll" en la página.
