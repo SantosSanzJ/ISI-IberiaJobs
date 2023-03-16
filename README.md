@@ -130,7 +130,6 @@ Presentaremos las tecnologías que vamos a usar en el proyecto y que hemos pensa
 
 # Mockup de GUI y user experience
 
-![Uploading Diagrama de arquitectura del sistema.drawio (1).png…]()
-
+![Main](https://user-images.githubusercontent.com/55651737/225570447-336ead9d-9cd1-4b21-9ae5-15e0dd44f45c.png)
 
 La página web presenta un diseño minimalista e intuitivo de fácil uso, la unica interacción del usuario es con el cuadro de busqueda. La información referente a las comparativas de trabajos se muestran haciendo "scroll" en la página.
