@@ -1,2 +1,4 @@
 secrets.json
 geckodriver.log
+*.pdf
+__pycache__

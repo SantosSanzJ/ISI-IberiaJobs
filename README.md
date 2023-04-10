@@ -7,6 +7,18 @@ Javier Santos Sanz: Testing
 Joaquín Sierra Granados: Backend
 
 Álvaro Ruiz Roldán: Frontend
+
+# Requisitos
+Es necesario crear un archivo en la carpeta src llamado secrets.json con el siguiente formato:
+```
+{
+    "Jooble": "Tu clave",
+    "EmpleatePage": 0 
+}
+```
+También,cambia los datos en database_config.json para que se conecte a tu base de datos y en Estructura.sql tiene la tabla trabajos que se usará junto con un una serie de comandos básicos.
+ 
+Por último, instale los requirements.txt para instalar los paquetes necesarios en python.
 # Motivación
 
 Poder ofrecer un entorno intuitivo para llevar a cabo búsquedas de trabajo para ingenieros tanto de España como fuera de ella, de esta forma facilitando la búsqueda y el tiempo de búsqueda de este tipo de trabajo.
