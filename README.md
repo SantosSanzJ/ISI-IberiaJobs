@@ -16,9 +16,28 @@ Es necesario crear un archivo en la carpeta src llamado secrets.json con el sigu
     "EmpleatePage": 0 
 }
 ```
-También,cambia los datos en database_config.json para que se conecte a tu base de datos y en Estructura.sql tiene la tabla trabajos que se usará junto con un una serie de comandos básicos.
+ - Tener pip3 intalado.
+ - Descargar extensión de visual studio Code(Live Server) para poder desplegar la web rápido.
+ - MySQL WorkBench
+ - Todas las Librerias necesarias
+
+Como el webscrapping ya fue ejecutado en su momento está toda la información guardada en el sql 
+"iberiajobs_trabajos.sql" asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping,
+copia todo el código del archivo .sql mencionado anteriormente y ejecutalo en tu Workbench local, para ello
+necesitas crearte en local tu propia base de datos, ponle el nombre de "iberiajobs", el usuario debe ser "root"
+y la contraseña igual. Si cambias alguno de estos paramentros debes hacerlo tambien en el archivo 
+"database_config.json" o si nó, no habrá conexión con la base de datos y saltará un error.
+El archivo "Estructura.sql" tiene la tabla trabajos que se usará junto con un una serie de comandos básicos.
+
+El archivo llamado stats.py dentro de la carpeta de "Js" que está en la carpeta de "WebPage" debe ser ejectutado
+y estar a la escucha ya que este crea un servidor Flask python que se comunica con el lado del cliente que es javascript.
+
+Una vez hecho esto si tienes la extensión de Live server en VS Code al pulsar en el botón derecho en "index.html" y darle en
+la opción "Open with Live Server" te desplegará la página en tu web automáticamente y si has seguido todos los pasos anteriores
+funcionará todo perfectamente. En caso de no estar utilzando la extensión o estar utilizando otro IDE solo necesitas ir a la carpeta donde esta el archivo "index.html" y abrirlo manualmente.
  
 Por último, instale los requirements.txt para instalar los paquetes necesarios en python.
+
 # Motivación
 
 Poder ofrecer un entorno intuitivo para llevar a cabo búsquedas de trabajo para ingenieros tanto de España como fuera de ella, de esta forma facilitando la búsqueda y el tiempo de búsqueda de este tipo de trabajo.
