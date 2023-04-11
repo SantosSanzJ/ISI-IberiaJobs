@@ -11,13 +11,15 @@ CORS(app)
 @app.route('/search', methods=['POST'])
 def mi_evento():
     data_list = []
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, 'database_config.json')
     pos = request.json['pos']
     pais = request.json['pais']
     if pais == "Spain":
         pais = 1
     else :
         pais = 0    
-    with open(os.getcwd() + '\ISI-IberiaJobs-main\src\database_config.json', 'r') as f:
+    with open(filename, 'r') as f:
         config = json.load(f)
         cnx = mysql.connector.connect(**config)
         cursor = cnx.cursor(buffered=True)

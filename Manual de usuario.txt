@@ -8,14 +8,7 @@ Requisitos:
 
 
  Instalación:
-    Las librerias a descargar a través del comando pip install "librería" son las siguientes:
-    - mysql-connector-python (Webscrapping y Web)
-    - requests (Webscrapping)
-    - regex (Webscrapping)
-    - flask (Web)
-    - flask_cors (Web)
-    - selenium (Webscrapping)
-    - PyPDF2 (Webscrapping)
+    La libreias se instalan automaticamente en el archivo "requeriments.txt".
 
     Como el webscrapping ya fue ejecutado en su momento está toda la información guardada en el sql 
     "iberiajobs_trabajos.sql" asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping,
