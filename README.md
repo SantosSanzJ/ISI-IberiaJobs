@@ -9,6 +9,8 @@ Joaquín Sierra Granados: Backend
 Álvaro Ruiz Roldán: Frontend
 
 # Requisitos
+Será neceserio tener un driver dependiendo de tu navegador, de todas formas se encuentra los últimos de Edge y Firefox, siendo no necesario si tienes la última versión. 
+
 Es necesario crear un archivo en la carpeta src llamado secrets.json con el siguiente formato:
 ```
 {
