@@ -16,25 +16,43 @@
     </nav>
     <section id="home">
       <div class="container">
-        
-        <label for="input">Searching for...</label>
-        <input type="text" id="input" placeholder="Job, company or keyword">
+        <div>
+          <div>
+            <label for="input">Searching for...</label>
+          </div>
+          <div>
+            <input type="text" id="input" placeholder="Job, company or keyword">
+          </div>
+        </div>
           
+        <div>
+          <div>
+            <label for="opcion">From...</label>
+          </div>
+          <div>
+            <select id="opcion" name="opcion">
+              <option value="Spain">Spain</option>
+              <option value="EEUU">EEUU</option>    
+            </select>
+          </div>
+        </div>
           
-        <label for="opcion">From...</label>
-        <select id="opcion" name="opcion">
-          <option value="opcion1">Spain</option>
-          <option value="opcion2">EEUU</option>    
-        </select>
-          
-          
-        <button type="submit">Search</button>
+      <div id="lastDiv">
+        <div></div>
+        <div>
+          <button type="submit" id="search">Search</button>
+        </div>
+      </div>
         
       </div>
     </section>
     <section id="stats">
-      <!-- Content about "About me" -->
+      <div id="noResults">
+      </div>
+      <div id="results">
+      </div>
     </section>
     <script src="js/TopDownBar.js"></script>
+    <script src="js/stats.js"></script>
   </body>
 </html>

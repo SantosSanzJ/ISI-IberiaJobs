@@ -11,8 +11,8 @@ import json
 # Load the JSON document from the file
 with open('../secrets.json') as f:
     data = json.load(f)
-download_dir = data['RutaDescargas']
-firefox_options = webdriver.FirefoxOptions()
+download_dir = r"C:\Users\03961465\Desktop\Tercero\ISI\ISI-IberiaJobs\src\WebScrapping\pdf_Files"
+firefox_options = webdriver.ChromeOptions()
 prefs = {
 "browser.download.folderList": 2,
 "browser.download.dir": download_dir,

@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #2d3133;
   }
 
 nav {
@@ -63,79 +64,60 @@ nav {
     align-items: center;
     color: #fff;
     text-align: center;
-    font-size: 4em;
   }
   
-  #home .container {
-    position: relative;
-    background-color: rgba(22,125,183,0.7); /* fondo semi-transparente */
-    width: 80%;
-    height: 28%;
-    padding: 20px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 2000px;
+    .container {
+      background-color: rgba(22,125,183,0.7); /* fondo semi-transparente */
+      width: 80%;
+      height: 30%;
+      padding: 5%;
+      padding-bottom: 2%;
+      margin-top: 3em;
+      margin-left: 2em;
+      margin-right: 2em;
+      border-radius: 10px;
     }
   
     .container label {
         text-align: left;
-        margin-top: 30px;
         display: block;
-        margin-bottom: 5px;
         font-size: 24px;
-        margin-left: 0;
         font-family:'Open Sans',Arial,sans-serif;
+        height: 100%;
     }
 
     .container input {
         display: block;
-        padding: 5px;
-        height: 40px;
-        width: 530px;
-        display: block;
+        height: 90%;
+        width: 90%;
         font-size: 16px;
         line-height: 20px;
         border: 1px solid #c7c7c7;
         border-radius: 4px;
         color: #2d3133;
-        margin: 0;
 
     }
-
-    label[for="opcion"]{
-        position: absolute;
-        margin-top: 40px;
-        margin-bottom: 5px;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    
+    .container div {
+      float: left;
+      width: 40%;
+      height: 100%;
+    }
     .container select{
-        position: absolute;
-        padding: 5px;
-        margin-top: 72px;
-        margin-left: 110px;
-        margin-bottom: 5px;
-        height: 52px;
-        width: 300px;
-        font-size: 16px;
-        line-height: 20px;
-        border: 1px solid #c7c7c7;
-        border-radius: 4px;
-        color: #2d3133;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-size: 16px;
+      line-height: 20px;
+      border: 1px solid #c7c7c7;
+      border-radius: 4px;
+      color: #2d3133;
     }
 
-    button[type="submit"] {
-        position: absolute;
-        margin-top: -52px;
-        margin-left: 370px;
-        height: 52px;
-        width: 150px;
+    .container button {
+        width: 70%;
+        height: 100%;
         font-size: 16px;
         line-height: 20px;
         border: 1px solid #c7c7c7;
@@ -143,11 +125,43 @@ nav {
         color: #ffffff;
         background-color: rgb(241, 138, 54);
       }
+      .container div:nth-child(3) div {
+        height: 25%;
+      }
+      #lastDiv {
+        width: 20%;
+      }
+
+  .container div div {
+    float: left;
+    width: 100%;
+    height: 25%;
+  }
 
 
   #stats {
+    background-image: url('img/prog.jpg');
+    background-size:auto;
+    background-position: center;
     background-color: #dde8ed;
-    padding: 500px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #stats div {
+    width: 70%;
+    padding: 5%;
+    height: 80%;
+    margin: 10%;
+    margin-top: 5%;
+    background-color: rgba(22,125,183,0.7);
+    color: #ffffff;
+  }
+
+  #stats div div {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 124, 183, 0);
   }
   
   

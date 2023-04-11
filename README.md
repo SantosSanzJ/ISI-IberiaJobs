@@ -13,8 +13,7 @@ Es necesario crear un archivo en la carpeta src llamado secrets.json con el sigu
 ```
 {
     "Jooble": "Tu clave",
-    "EmpleatePage": 0,
-    "RutaDescargas": "Ruta donde se descargan los archivos"
+    "EmpleatePage": 0 
 }
 ```
 También,cambia los datos en database_config.json para que se conecte a tu base de datos y en Estructura.sql tiene la tabla trabajos que se usará junto con un una serie de comandos básicos.
