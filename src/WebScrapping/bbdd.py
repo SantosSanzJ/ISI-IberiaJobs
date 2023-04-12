@@ -41,6 +41,7 @@ def normalize_Jooble (dict):
     dict_Jooble = {}
     dict_Jooble['ID'] = dict['id']
     dict_Jooble['Posicion'] = dict['title']
+    
     if dict['salary'] == '':
         dict_Jooble['Sueldo'] = None
     else:
@@ -58,3 +59,16 @@ def normalize_Jooble (dict):
     dict_Jooble['Descripcion'] = dict['snippet']
     dict_Jooble['EsEspanol'] = dict['EsEspanol']
     return dict_Jooble
+
+def get_job_by_id(id):
+    '''Get the job with the given id.'''
+    with open('../database_config.json', 'r') as f:
+        config = json.load(f)
+    cnx = mysql.connector.connect(**config)
+    cursor = cnx.cursor()
+    SQL_query = ("SELECT * FROM Trabajos WHERE ID = '" + str(id) + "'")
+    cursor.execute(SQL_query)
+    result = cursor.fetchall()
+    cursor.close()
+    cnx.close()
+    return result

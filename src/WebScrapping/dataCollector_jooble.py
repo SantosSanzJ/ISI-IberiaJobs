@@ -1,7 +1,9 @@
 import json
 import requests
 import bbdd
-def get_data():
+
+def do_request_Jooble(keywords, location):
+    '''Do the request to Jooble API and return the response in json format.'''
     with open('../secrets.json') as f:
         secrets = json.load(f)
         api_key = secrets['Jooble']
@@ -11,28 +13,21 @@ def get_data():
         'Content-type': 'application/json'
     }
     data = {
-        'keywords': 'Developer',
-        'location': 'Kansas'
-        #'keywords': 'Software',
-        #'location': 'Madrid',
+        'keywords': keywords,
+        'location': location
     }
     response = requests.post(url + api_key, headers=headers, json=data)
-    json_response = response.json()
-    
-    return json_response
-jobs = get_data()
-i = 0
-for job in jobs['jobs']:
-    if i > 110:
-        break
-    #print(job['id'])
-    #print(job['location'])
-    #print(job['salary'])
-    #print(job['title'])
-    #print(job['snippet'])
-    #print(job['type'])
-    #print the keys of the job
-    #print(job.keys())
-    job['EsEspanol'] = False
-    bbdd.insert_dict_into_DDBB(bbdd.normalize_Jooble(job))
-    i += 1
+    return response.json()
+def insert_into_BBDD_Jooble(jobs, number_of_jobs):
+    '''Insert the jobs into the BBDD with the limit of number_of_jobs.'''
+    i = 0
+    for job in jobs['jobs']:
+        if i > number_of_jobs:
+            break
+        job['EsEspanol'] = False
+        bbdd.insert_dict_into_DDBB(bbdd.normalize_Jooble(job))
+        i += 1
+
+if __name__ == '__main__':
+    jobs = do_request_Jooble("Developer", "Kansas")
+    insert_into_BBDD_Jooble(jobs, 110)

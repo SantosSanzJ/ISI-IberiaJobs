@@ -10,6 +10,7 @@ CORS(app)
 
 @app.route('/search', methods=['POST'])
 def mi_evento():
+    '''Search in the database the jobs that match with the position and the country.'''
     data_list = []
     dirname = os.path.dirname(__file__)
     filename = os.path.join(dirname, 'database_config.json')
@@ -43,8 +44,6 @@ def mi_evento():
                 "EsEspanol": esEspanol
             }
             data_list.append(data)
-
-
         cursor.close()
         cnx.close()
     return jsonify(data_list)

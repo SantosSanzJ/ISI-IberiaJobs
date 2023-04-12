@@ -4,3 +4,4 @@ requests==2.28.2
 regex==2022.10.31
 mysql-connector-python==8.0.32
 webdrivermanager==0.10.0
+pytest==7.3.0
