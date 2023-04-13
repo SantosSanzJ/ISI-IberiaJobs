@@ -29,10 +29,69 @@ def insert_dict_into_DDBB(dict):
     try:
         cursor.execute(SQL_query, data)
         cnx.commit()
+        increase_if_keyword(dict)
     
     except mysql.connector.errors.IntegrityError:
         print('Duplicate primary key: ' + str(dict['ID']))
+       
+    cursor.close()
+    cnx.close()
+
+def increase_if_keyword(dict):
+    '''Increase Frecuencia if the keyword is in the columns Posicion and Descripcion'''
     
+    with open('../database_config.json', 'r') as f:
+        config = json.load(f)
+    with open('../programming_technologies.json', 'r') as f:
+        stats = json.load(f)
+    cnx = mysql.connector.connect(**config)
+    query = "SELECT Keyword FROM Stats"
+
+    if check_stats_empty():
+        insert_stats()
+    
+    cursor = cnx.cursor()
+    cursor.execute(query)
+    keywords = [row[0] for row in cursor.fetchall()]
+    for keyword in keywords:
+        pattern = fr"\b{re.escape(keyword)}\b"
+        if re.search(pattern, f"{dict['Posicion']} {dict['Descripcion']}", re.IGNORECASE):
+            if dict['EsEspanol']:
+                update_query = f"UPDATE Stats SET FrecuenciaES = FrecuenciaES + 1 WHERE Keyword = '{keyword}'"
+            else:
+                update_query = f"UPDATE Stats SET FrecuenciaUSA = FrecuenciaUSA + 1 WHERE Keyword = '{keyword}'"
+            cursor.execute(update_query)
+            cnx.commit()
+    cursor.close()
+    cnx.close()
+
+def check_stats_empty():
+    '''Check if the stats table is empty'''
+    with open('../database_config.json', 'r') as f:
+        config = json.load(f)
+    cnx = mysql.connector.connect(**config)
+    cursor = cnx.cursor()
+    cursor.execute("SELECT COUNT(*) FROM Stats")
+    result = cursor.fetchone()   
+    cursor.close()
+    cnx.close()
+    return result[0] == 0
+
+def insert_stats():
+    '''Insert the stats into the database.'''
+    with open('../programming_technologies.json', 'r') as f:
+        stats = json.load(f)
+    with open('../database_config.json', 'r') as f:
+        config = json.load(f)
+    cnx = mysql.connector.connect(**config)
+    cursor = cnx.cursor()
+    for stat in stats:
+        data = (stat['name'], 0, 0)
+        SQL_query = ("INSERT INTO Stats "
+            "(Keyword, FrecuenciaES, FrecuenciaUSA) "
+            "VALUES (%s, %s, %s)")
+        cursor.execute(SQL_query, data)
+        cnx.commit()
     cursor.close()
     cnx.close()
 

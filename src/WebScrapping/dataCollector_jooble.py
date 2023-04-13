@@ -24,10 +24,10 @@ def insert_into_BBDD_Jooble(jobs, number_of_jobs):
     for job in jobs['jobs']:
         if i > number_of_jobs:
             break
-        job['EsEspanol'] = False
+        job['EsEspanol'] = True
         bbdd.insert_dict_into_DDBB(bbdd.normalize_Jooble(job))
         i += 1
 
 if __name__ == '__main__':
-    jobs = do_request_Jooble("Developer", "Kansas")
-    insert_into_BBDD_Jooble(jobs, 110)
+    jobs = do_request_Jooble("Developer", "Toledo")
+    insert_into_BBDD_Jooble(jobs, 1)
