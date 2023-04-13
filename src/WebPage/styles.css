@@ -163,5 +163,9 @@ nav {
     padding: 0;
     background-color: rgba(22, 124, 183, 0);
   }
+
+  #graph canvas {
+    margin: 10%
+  }
   
   

@@ -48,5 +48,37 @@ def mi_evento():
         cnx.close()
     return jsonify(data_list)
 
+@app.route('/graph', methods=['POST'])
+def mi_evento2():
+    #Search in the database the most used tecnologies 
+    data_list = []
+    val = int(request.json['val'])
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, 'database_config.json')
+    with open(filename, 'r') as f:
+        config = json.load(f)
+        cnx = mysql.connector.connect(**config)
+        cursor = cnx.cursor(buffered=True)
+        if(val == 1):
+            query = ("SELECT Keyword, FrecuenciaEs, FrecuenciaUSA FROM Stats WHERE FrecuenciaEs ORDER BY FrecuenciaEs DESC")
+        else:
+            query = ("SELECT Keyword, FrecuenciaEs, FrecuenciaUSA FROM Stats WHERE FrecuenciaUSA ORDER BY FrecuenciaUSA DESC")
+
+        cursor.execute(query)
+        #Generating Json
+        for (Keyword, FrecuenciaEs, FrecuenciaUSA) in cursor:
+            key = Keyword
+            freEs = FrecuenciaEs
+            freUSA = FrecuenciaUSA
+            data = {
+                'Keyword': key,
+                'FrecuenciaEs': freEs,
+                'FrecuenciaUSA': freUSA
+            }
+            data_list.append(data)
+        cursor.close()
+        cnx.close()
+    return jsonify(data_list)
+
 if __name__ == '__main__':
     app.run()

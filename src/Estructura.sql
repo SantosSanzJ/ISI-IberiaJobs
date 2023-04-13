@@ -11,13 +11,3 @@ Create Table Trabajos(
 );
 DROP table Trabajos;
 Select * FROM Trabajos;
-
-CREATE TABLE Stats(
-	Keyword varchar(256),
-    FrecuenciaES INT,
-    FrecuenciaUSA INT,
-    PRIMARY KEY(Keyword)
-);
-
-DROP TABLE STATS;
-SELECT * FROM Stats;

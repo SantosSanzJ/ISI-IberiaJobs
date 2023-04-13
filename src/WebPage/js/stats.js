@@ -33,6 +33,7 @@ function search() {
         });
 }
 
+
 //Method that define wich stats are showing
 function mostraStats(item, opc) {
     var miDiv = document.getElementById('noResults');
@@ -55,3 +56,4 @@ function mostraStats(item, opc) {
         '<div style="margin-bottom:10%">País:' + esEspa + '</div>';
     }
 }
+
