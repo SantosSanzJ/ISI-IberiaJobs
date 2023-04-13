@@ -9,7 +9,7 @@ Joaquín Sierra Granados: Backend
 Álvaro Ruiz Roldán: Frontend
 
 # Requisitos
-Será neceserio tener un driver dependiendo de tu navegador, de todas formas se encuentra los últimos de Edge y Firefox, siendo no necesario si tienes la última versión. Junto con un SSOO operativo Windows, debido a que ha sido con el que ha sido probado el proyecto.
+Será necesario tener un driver dependiendo de tu navegador, de todas formas, se encuentra los últimos de Edge y Firefox, siendo no necesario si tienes la última versión. Junto con un SSOO operativo Windows, debido a que ha sido con el que ha sido probado el proyecto.
 
 Es necesario crear un archivo en la carpeta src llamado secrets.json con el siguiente formato:
 ```
@@ -29,14 +29,14 @@ Como el webscrapping ya fue ejecutado en su momento está toda la información g
 Copia todo el código del archivo .sql mencionado anteriormente y ejecutalo en tu Workbench local, para ello
 necesitas crearte en local tu propia base de datos, y cambiar los datos acorde con tu configuración de "database_config.json".
 
-El archivo "Estructura.sql" tiene la tabla trabajos y stats que se usará junto con un una serie de comandos básicos.
+El archivo "Estructura.sql" tiene la tabla trabajos y stats que se usará junto con una serie de comandos básicos.
 
 El archivo llamado stats.py dentro de la carpeta de "Js" que está en la carpeta de "WebPage" debe ser ejectutado
 y estar a la escucha ya que este crea un servidor Flask python que se comunica con el lado del cliente que es javascript.
 
 Una vez hecho esto si tienes la extensión de Live server en VS Code al pulsar en el botón derecho en "index.html" y darle en
 la opción "Open with Live Server" te desplegará la página en tu web automáticamente y si has seguido todos los pasos anteriores
-funcionará todo perfectamente. En caso de no estar utilzando la extensión o estar utilizando otro IDE solo necesitas ir a la carpeta donde esta el archivo "index.html" y abrirlo manualmente.
+funcionará todo perfectamente. En caso de no estar utilizando la extensión o estar utilizando otro IDE solo necesitas ir a la carpeta donde está el archivo "index.html" y abrirlo manualmente.
  
 # Testing
 Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde src/WebScrapping con el comando:
