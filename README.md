@@ -9,7 +9,7 @@ Joaquín Sierra Granados: Backend
 Álvaro Ruiz Roldán: Frontend
 
 # Requisitos
-Será neceserio tener un driver dependiendo de tu navegador, de todas formas se encuentra los últimos de Edge y Firefox, siendo no necesario si tienes la última versión. 
+Será neceserio tener un driver dependiendo de tu navegador, de todas formas se encuentra los últimos de Edge y Firefox, siendo no necesario si tienes la última versión. Junto con un SSOO operativo Windows, debido a que ha sido con el que ha sido probado el proyecto.
 
 Es necesario crear un archivo en la carpeta src llamado secrets.json con el siguiente formato:
 ```
@@ -21,15 +21,15 @@ Es necesario crear un archivo en la carpeta src llamado secrets.json con el sigu
  - Tener pip3 intalado.
  - Descargar extensión de visual studio Code(Live Server) para poder desplegar la web rápido.
  - MySQL WorkBench
- - Todas las Librerias necesarias
+ - Todas las Librerias necesarias que se encuentran en requeriments.txt.
 
 Como el webscrapping ya fue ejecutado en su momento está toda la información guardada en el sql 
-"iberiajobs_trabajos.sql" asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping,
-copia todo el código del archivo .sql mencionado anteriormente y ejecutalo en tu Workbench local, para ello
-necesitas crearte en local tu propia base de datos, ponle el nombre de "iberiajobs", el usuario debe ser "root"
-y la contraseña igual. Si cambias alguno de estos paramentros debes hacerlo tambien en el archivo 
-"database_config.json" o si nó, no habrá conexión con la base de datos y saltará un error.
-El archivo "Estructura.sql" tiene la tabla trabajos que se usará junto con un una serie de comandos básicos.
+"iberiajobs_trabajos.sql" y "iberiajobs_stats", asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping.
+
+Copia todo el código del archivo .sql mencionado anteriormente y ejecutalo en tu Workbench local, para ello
+necesitas crearte en local tu propia base de datos, y cambiar los datos acorde con tu configuración de "database_config.json".
+
+El archivo "Estructura.sql" tiene la tabla trabajos y stats que se usará junto con un una serie de comandos básicos.
 
 El archivo llamado stats.py dentro de la carpeta de "Js" que está en la carpeta de "WebPage" debe ser ejectutado
 y estar a la escucha ya que este crea un servidor Flask python que se comunica con el lado del cliente que es javascript.
@@ -38,7 +38,9 @@ Una vez hecho esto si tienes la extensión de Live server en VS Code al pulsar e
 la opción "Open with Live Server" te desplegará la página en tu web automáticamente y si has seguido todos los pasos anteriores
 funcionará todo perfectamente. En caso de no estar utilzando la extensión o estar utilizando otro IDE solo necesitas ir a la carpeta donde esta el archivo "index.html" y abrirlo manualmente.
  
-Por último, instale los requirements.txt para instalar los paquetes necesarios en python.
+# Testing
+Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde src/WebScrapping con el comando:
+```python -m pytest```
 
 # Motivación
 
@@ -166,3 +168,4 @@ Presentaremos las tecnologías que vamos a usar en el proyecto y que hemos pensa
 ![Main](https://user-images.githubusercontent.com/55651737/225570447-336ead9d-9cd1-4b21-9ae5-15e0dd44f45c.png)
 
 La página web presenta un diseño minimalista e intuitivo de fácil uso, la unica interacción del usuario es con el cuadro de busqueda. La información referente a las comparativas de trabajos se muestran haciendo "scroll" en la página.
+
