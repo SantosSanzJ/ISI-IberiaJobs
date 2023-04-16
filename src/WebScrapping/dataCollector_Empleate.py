@@ -10,10 +10,11 @@ import time
 import random 
 import json
 import os
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
 def get_configured_driver():
     '''Returns a configured driver for the browser that the user has set as default.'''
-    current_directory = os.path.abspath(os.getcwd())
-
     download_dir = os.path.join(current_directory,"pdf_Files")
 
     with OpenKey(HKEY_CURRENT_USER, r"Software\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\http\\UserChoice") as key:
@@ -63,7 +64,7 @@ def browser_empleate(driver):
         btn_siguiente = driver.find_element(By.XPATH,"//*[contains(@title,'Siguiente')]")
         btn_siguiente.click()
         data['EmpleatePage'] += 1
-        with open(os.path.join(current_directory,'../secrets.json', 'w')) as f:
+        with open(os.path.join(current_directory, '../secrets.json'), 'w') as f:
             json.dump(data, f)
             print("Avanzando a la página: " + str(data['EmpleatePage']))
         time.sleep(random.uniform(2.0, 5.0))
