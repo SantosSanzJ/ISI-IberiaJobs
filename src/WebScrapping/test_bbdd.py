@@ -2,6 +2,9 @@ import bbdd
 import pdf
 import json
 import mysql.connector
+import os
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
 def test_normalize_Jooble():
     '''Test the function normalize_Jooble.'''
     dict = {'id': '1', 'title': 'test', 'salary': '10000', 'type': 'Full-time', 'snippet': 'test', 'EsEspanol': True}
@@ -17,7 +20,7 @@ def test_insert_dict_into_DDBB():
     '''Test the function insert_dict_into_DDBB.'''
     dict = {'ID': '1', 'Posicion': 'test', 'Sueldo': '10000', 'Jornada': 'COMPLETA', 'Descripcion': 'test', 'EsEspanol': True}
     bbdd.insert_dict_into_DDBB(dict)
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
     
     cnx = mysql.connector.connect(**config)
@@ -50,7 +53,7 @@ def test_get_job_by_id():
     assert result[0][6] == 'test'
     assert result[0][7] == True
     # Delete the row
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
     
     cnx = mysql.connector.connect(**config)

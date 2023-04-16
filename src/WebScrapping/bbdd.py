@@ -1,7 +1,9 @@
 import mysql.connector
 import json
 import re
+import os
 
+current_directory = os.path.dirname(os.path.abspath(__file__))
 def insert_dict_into_DDBB(dict):
     '''Insert a dictionary into the database.'''
     if 'Posicion' not in dict:
@@ -16,7 +18,7 @@ def insert_dict_into_DDBB(dict):
         dict['Idiomas'] = None
     if 'Descripcion' not in dict:
         dict['Descripcion'] = None
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
     cnx = mysql.connector.connect(**config)
     cursor = cnx.cursor()
@@ -40,9 +42,9 @@ def insert_dict_into_DDBB(dict):
 def increase_if_keyword(dict):
     '''Increase Frecuencia if the keyword is in the columns Posicion and Descripcion'''
     
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
-    with open('../programming_technologies.json', 'r') as f:
+    with open(os.path.join(current_directory,'../programming_technologies.json'), 'r') as f:
         stats = json.load(f)
     cnx = mysql.connector.connect(**config)
     query = "SELECT Keyword FROM Stats"
@@ -67,7 +69,7 @@ def increase_if_keyword(dict):
 
 def check_stats_empty():
     '''Check if the stats table is empty'''
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
     cnx = mysql.connector.connect(**config)
     cursor = cnx.cursor()
@@ -79,9 +81,9 @@ def check_stats_empty():
 
 def insert_stats():
     '''Insert the stats into the database.'''
-    with open('../programming_technologies.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         stats = json.load(f)
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
     cnx = mysql.connector.connect(**config)
     cursor = cnx.cursor()
@@ -121,7 +123,7 @@ def normalize_Jooble (dict):
 
 def get_job_by_id(id):
     '''Get the job with the given id.'''
-    with open('../database_config.json', 'r') as f:
+    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
     cnx = mysql.connector.connect(**config)
     cursor = cnx.cursor()

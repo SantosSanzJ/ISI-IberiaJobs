@@ -39,8 +39,8 @@ la opción "Open with Live Server" te desplegará la página en tu web automáti
 funcionará todo perfectamente. En caso de no estar utilzando la extensión o estar utilizando otro IDE solo necesitas ir a la carpeta donde esta el archivo "index.html" y abrirlo manualmente.
  
 # Testing
-Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde src/WebScrapping con el comando:
-```python -m pytest```
+Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde la carpeta donde tengas los webdrivers con el comando:
+```python -m pytest``` o ```pytest``` si estás en unix.
 
 # Motivación
 

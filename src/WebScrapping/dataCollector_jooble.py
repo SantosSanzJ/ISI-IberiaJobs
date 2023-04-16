@@ -1,10 +1,12 @@
 import json
 import requests
 import bbdd
+import os
 
+current_directory = os.path.dirname(os.path.abspath(__file__))
 def do_request_Jooble(keywords, location):
     '''Do the request to Jooble API and return the response in json format.'''
-    with open('../secrets.json') as f:
+    with open(os.path.join(current_directory,"../secrets.json")) as f:
         secrets = json.load(f)
         api_key = secrets['Jooble']
     
