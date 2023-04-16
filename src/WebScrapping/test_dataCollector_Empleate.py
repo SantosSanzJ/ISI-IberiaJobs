@@ -1,7 +1,7 @@
 import dataCollector_Empleate as dataCollector
 import os
 
-def test_get_configured_driver():
+def get_configured_driver():
     '''Test the function get_configured_driver.'''
     driver = dataCollector.get_configured_driver()
     assert driver is not None
