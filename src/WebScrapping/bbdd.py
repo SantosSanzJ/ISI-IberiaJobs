@@ -1,7 +1,8 @@
-import mysql.connector
 import json
 import re
 import os
+import mysql.connector
+
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 def insert_dict_into_DDBB(dict):
@@ -25,11 +26,12 @@ def insert_dict_into_DDBB(dict):
 
     data = (dict['ID'], dict['Posicion'], dict['Sueldo'], dict['TiempoExperiencia'],
      dict['Jornada'], dict['Idiomas'], dict['Descripcion'], dict['EsEspanol'])
-    SQL_query = ("INSERT INTO Trabajos "
-            "(ID, Posicion, Sueldo, TiempoExperiencia, Jornada, Idiomas, Descripcion, EsEspanol) "
+    sql_query = ("INSERT INTO Trabajos "
+            "(ID, Posicion, Sueldo, TiempoExperiencia, Jornada, Idiomas, " +
+            "Descripcion, EsEspanol) "
             "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
     try:
-        cursor.execute(SQL_query, data)
+        cursor.execute(sql_query, data)
         cnx.commit()
         increase_if_keyword(dict)
     
@@ -81,7 +83,7 @@ def check_stats_empty():
 
 def insert_stats():
     '''Insert the stats into the database.'''
-    with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
+    with open(os.path.join(current_directory,'../programming_technologies.json'), 'r') as f:
         stats = json.load(f)
     with open(os.path.join(current_directory,'../database_config.json'), 'r') as f:
         config = json.load(f)
@@ -89,10 +91,10 @@ def insert_stats():
     cursor = cnx.cursor()
     for stat in stats:
         data = (stat['name'], 0, 0)
-        SQL_query = ("INSERT INTO Stats "
+        sql_query = ("INSERT INTO Stats "
             "(Keyword, FrecuenciaES, FrecuenciaUSA) "
             "VALUES (%s, %s, %s)")
-        cursor.execute(SQL_query, data)
+        cursor.execute(sql_query, data)
         cnx.commit()
     cursor.close()
     cnx.close()
@@ -127,8 +129,8 @@ def get_job_by_id(id):
         config = json.load(f)
     cnx = mysql.connector.connect(**config)
     cursor = cnx.cursor()
-    SQL_query = ("SELECT * FROM Trabajos WHERE ID = '" + str(id) + "'")
-    cursor.execute(SQL_query)
+    sql_query = ("SELECT * FROM Trabajos WHERE ID = '" + str(id) + "'")
+    cursor.execute(sql_query)
     result = cursor.fetchall()
     cursor.close()
     cnx.close()
