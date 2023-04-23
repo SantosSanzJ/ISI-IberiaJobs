@@ -1,0 +1,8 @@
+neceistas el node.js instalado version >= 14.0
+
+Instalas jasmine en el npm y jsdom
+
+npm install jasmine
+npm install jsdom
+
+
