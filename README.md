@@ -18,25 +18,11 @@ Es necesario crear un archivo en la carpeta src llamado secrets.json con el sigu
     "EmpleatePage": 0 
 }
 ```
- - Tener pip3 intalado.
- - Descargar extensión de visual studio Code(Live Server) para poder desplegar la web rápido.
- - MySQL WorkBench
- - Todas las Librerias necesarias que se encuentran en requeriments.txt.
 
 Como el webscrapping ya fue ejecutado en su momento está toda la información guardada en el sql 
 "iberiajobs_trabajos.sql" y "iberiajobs_stats", asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping.
 
-Copia todo el código del archivo .sql mencionado anteriormente y ejecutalo en tu Workbench local, para ello
-necesitas crearte en local tu propia base de datos, y cambiar los datos acorde con tu configuración de "database_config.json".
-
-El archivo "Estructura.sql" tiene la tabla trabajos y stats que se usará junto con un una serie de comandos básicos.
-
-El archivo llamado stats.py dentro de la carpeta de "Js" que está en la carpeta de "WebPage" debe ser ejectutado
-y estar a la escucha ya que este crea un servidor Flask python que se comunica con el lado del cliente que es javascript.
-
-Una vez hecho esto si tienes la extensión de Live server en VS Code al pulsar en el botón derecho en "index.html" y darle en
-la opción "Open with Live Server" te desplegará la página en tu web automáticamente y si has seguido todos los pasos anteriores
-funcionará todo perfectamente. En caso de no estar utilzando la extensión o estar utilizando otro IDE solo necesitas ir a la carpeta donde esta el archivo "index.html" y abrirlo manualmente.
+Ejecuta el comando "docker-compose up" sobre la carpeta raiz del proyecto, si sale un error de que el puerto 3306 está yá tomado, deberá borrar todos los procesos asociados al puerto 3306. Una vez terminada la instalación del proyecto en docker, solo habrá que abrir el index.html desde su navegador predeterminado.
  
 # Testing
 Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde la carpeta donde tengas los webdrivers con el comando:
