@@ -25,7 +25,7 @@ def mi_evento():
         connection = mysql.connector.connect(user='root', password='root', host='mysql', port="3306", database='db')
         cursor = connection.cursor()
 
-        query = ("SELECT Posicion, Jornada, Descripcion, EsEspanol FROM trabajos WHERE Posicion LIKE '" + pos + "%' AND EsEspanol = " + str(pais))
+        query = ("SELECT Posicion, Jornada, Descripcion, EsEspanol FROM trabajos WHERE Posicion LIKE '%" + pos + "%' AND EsEspanol = " + str(pais))
 
         cursor.execute(query)
         #Generating Json

@@ -138,7 +138,7 @@ function doGraph(arrEsVal, arrEsNames){
         data: {
             labels:[arrEsNames[0], arrEsNames[1], arrEsNames[2], arrEsNames[3], arrEsNames[4]],
             datasets:[{
-                label:"Las tecnologías más usadas en España",
+                label:"Las tecnologías más usadas en España sobre 128 trabajos",
                 backgroundColor: "rgba(22,125,183,0.7)",
                 data:[arrEsVal[0], arrEsVal[1], arrEsVal[2], arrEsVal[3], arrEsVal[4]]
             }
@@ -162,7 +162,7 @@ function doGraph2(arrUsaVal, arrUsaNames){
         data: {
             labels:[arrUsaNames[0], arrUsaNames[1], arrUsaNames[2], arrUsaNames[3], arrUsaNames[4]],
             datasets:[{
-                label:"Las tecnologías más usadas en EEUU",
+                label:"Las tecnologías más usadas en EEUU sobre 129 trabajos",
                 backgroundColor: "rgba(22,125,183,0.7)",
                 data:[arrUsaVal[0], arrUsaVal[1], arrUsaVal[2], arrUsaVal[3], arrUsaVal[4]]
             }
