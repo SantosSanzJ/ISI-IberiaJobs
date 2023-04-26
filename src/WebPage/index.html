@@ -53,6 +53,14 @@
       </div>
     </section>
     <section id="graph">
+      <div>
+        <h1>Stats</h1>
+        <select id="opcion2" name="opcion2">
+          <option value="">Selecione un país...</option>
+          <option value="Spain">Spain</option>
+          <option value="EEUU">EEUU</option>    
+        </select>
+      </div>
       <div id="graphStats">
         <canvas id="grafico" width="100%" height="100%"></canvas>
       </div>
@@ -61,76 +69,5 @@
     <script src="js/stats.js"></script>
     <script src="..\..\package\dist\chart.umd.js"></script>
     <script src="..\..\package\dist\jquery-3.6.4.min.js"></script>
-    <script>
-      var arrEsNames = []
-      var arrUsaNames = []
-      var arrEsVal = []
-      var arrUsaVal = []
-      var counterArrEs = 0
-      var counterArrUSA = 0
-      let chart;
-      fetch('http://127.0.0.1:5000/graph', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ val: 1})
-        })
-        .then(response => response.json())
-        .then(data => {
-            for (const item of data) {
-                counterArrEs += 1;
-                for (var i in item){
-                  if(i == "FrecuenciaEs"){
-                    arrEsVal.push(item[i]);
-                  }else if (i == "Keyword"){
-                    arrEsNames.push(item[i]);
-                  }
-                }
-                if(counterArrEs == 5){
-                    break;
-                }
-            }
-        });
-        fetch('http://127.0.0.1:5000/graph', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ val: 0})
-          })
-          .then(response => response.json())
-          .then(data => {
-              for (const item of data) {
-                  counterArrUSA += 1
-                  for (var i in item){
-                    if(i == "FrecuenciaUSA"){
-                      arrUsaVal.push(item[i]);
-                    }else if (i == "Keyword"){
-                      arrUsaNames.push(item[i]);
-                    }
-                  }
-                  if(counterArrUSA == 5){
-                      break;
-                  }
-                  doGraph(arrEsVal, arrEsNames, arrUsaVal, arrUsaNames);
-              }
-        });
-      function doGraph(arrEsVal, arrEsNames, arrUsaVal, arrUsaNames, chart){
-        let canvas = document.getElementById("grafico");
-        chart = new Chart(canvas, {
-            type: "bar",
-            data: {
-                labels:[arrEsNames[0], arrEsNames[1], arrEsNames[2], arrEsNames[3], arrEsNames[4]],
-                datasets:[{
-                    label:"Las tecnologías más usadas en España",
-                    backgroundColor: "rgba(22,125,183,0.7)",
-                    data:[arrEsVal[0], arrEsVal[1], arrEsVal[2], arrEsVal[3], arrEsVal[4]]
-                }
-              ],
-            }
-        });
-      }
-    </script>
   </body>
 </html>

@@ -165,7 +165,36 @@ nav {
   }
 
   #graph canvas {
-    margin: 10%
+    margin-top: 2%;
+    margin-bottom: 20%;
+    margin-left: 30%;
+    margin-right: 20%;
+
+  }
+
+  #opcion2 {
+      display: block;
+      height: 100%;
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-size: 16px;
+      line-height: 20px;
+      border: 1px solid #c7c7c7;
+      border-radius: 4px;
+      color: #2d3133;
+  }
+
+  #graph h1 {
+        text-align: left;
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        font-family:'Open Sans',Arial,sans-serif;
+        height: 100%;
+        color: white;
   }
   
   
