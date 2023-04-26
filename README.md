@@ -23,6 +23,8 @@ Como el webscrapping ya fue ejecutado en su momento está toda la información g
 "iberiajobs_trabajos.sql" y "iberiajobs_stats", asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping.
 
 Ejecuta el comando "docker-compose up" sobre la carpeta raiz del proyecto, si sale un error de que el puerto 3306 está yá tomado, deberá borrar todos los procesos asociados al puerto 3306. Una vez terminada la instalación del proyecto en docker, solo habrá que abrir el index.html desde su navegador predeterminado.
+
+Para eliminar los procesos que estan utilizando el puerto 3306 hay dos formas, la primera es hacerlo manualmente por comandos, y la otra es irte a servicios de windows(en caso de que utilices windows) y detener el proceso de MySQL80. Para después querer volver a poder utilizar MySQL Workbench tendrás que iniciar de nuevo este proceso, lo mismo pasa si lo haces por comandos. 
  
 # Testing
 Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde la carpeta donde tengas los webdrivers con el comando:
