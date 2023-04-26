@@ -1,8 +1,14 @@
 neceistas el node.js instalado version >= 14.0
 
-Instalas jasmine en el npm y jsdom
+jsdom
 
-npm install jasmine
-npm install jsdom
+Installar modulos de npm:
+
+    jsdom (npm install jsdom)
+    jest
+    jest-environment-jsdom
+
+comando: npm test
+
 
 

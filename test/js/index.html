@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IberiaJobs</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <h1>Iberia Jobs</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#graphStats">Stats</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <div class="container">
+        <div>
+          <div>
+            <label for="input">Searching for...</label>
+          </div>
+          <div>
+            <input type="text" id="input" placeholder="Job, company or keyword">
+          </div>
+        </div>
+          
+        <div>
+          <div>
+            <label for="opcion">From...</label>
+          </div>
+          <div>
+            <select id="opcion" name="opcion">
+              <option value="Spain">Spain</option>
+              <option value="EEUU">EEUU</option>    
+            </select>
+          </div>
+        </div>
+          
+      <div id="lastDiv">
+        <div></div>
+        <div>
+          <button type="submit" id="search">Search</button>
+        </div>
+      </div>
+        
+      </div>
+    </section>
+    <section id="stats">
+      <div id="noResults">
+      </div>
+      <div id="results">
+      </div>
+    </section>
+    <section id="graph">
+      <div>
+        <h1>Stats</h1>
+        <select id="opcion2" name="opcion2">
+          <option value="">Selecione un país...</option>
+          <option value="Spain">Spain</option>
+          <option value="EEUU">EEUU</option>    
+        </select>
+      </div>
+      <div id="graphStats">
+        <canvas id="grafico" width="100%" height="100%"></canvas>
+      </div>
+    </section>
+    <script src="js/TopDownBar.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="..\..\package\dist\chart.umd.js"></script>
+    <script src="..\..\package\dist\jquery-3.6.4.min.js"></script>
+  </body>
+</html>
