@@ -1,6 +1,6 @@
 {   
     "user": "root",
     "password": "root",
-    "host": "localhost",
-    "database": "iberiajobs"
+    "host": "mysql",
+    "database": "db"
 }

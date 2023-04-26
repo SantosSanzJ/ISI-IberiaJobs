@@ -1,0 +1,27 @@
+version: '3.3'
+services:
+  mysql:
+    build: ./mysql/
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '3306:3306'
+    networks:
+      - ibejobs
+  web:
+    build: .
+    command: "python3 ./src/stats.py"
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql
+    networks:
+      - ibejobs
+volumes:
+  db:
+    driver: local
+networks:
+  ibejobs:
+    driver: bridge
