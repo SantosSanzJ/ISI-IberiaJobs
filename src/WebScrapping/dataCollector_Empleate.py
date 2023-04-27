@@ -5,37 +5,31 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from msedge.selenium_tools import Edge, EdgeOptions
-from winreg import *
 import time
 import random 
 import json
 import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
-
 def get_configured_driver():
     '''Returns a configured driver for the browser that the user has set as default.'''
+    
     download_dir = os.path.join(current_directory,"pdf_Files")
-
-    with OpenKey(HKEY_CURRENT_USER, r"Software\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\http\\UserChoice") as key:
-        browser = QueryValueEx(key, 'Progid')[0]
-
-    if 'FirefoxURL' in browser:
-        firefox_options = webdriver.FirefoxOptions()
-        prefs = {
-        "browser.download.folderList": 2,
-        "browser.download.dir": download_dir,
-        "browser.helperApps.neverAsk.saveToDisk": "application/pdf"
-        }
-        for option, value in prefs.items():
-            firefox_options.set_preference(option, value)
-        driver = webdriver.Firefox(options=firefox_options)
-
+    firefox_options = webdriver.FirefoxOptions()
+    prefs = {
+    "browser.download.folderList": 2,
+    "browser.download.dir": download_dir,
+    "browser.helperApps.neverAsk.saveToDisk": "application/pdf"
+    }
+    for option, value in prefs.items():
+        firefox_options.set_preference(option, value)
+    if os.path.isdir('/proc/self/'):
+        print("Running on Docker")
+        driver = webdriver.Remote("http://127.0.0.1:4444/wd/hub",
+        options=firefox_options)
     else:
-        options = EdgeOptions()
-        options.use_chromium = True
-        options.add_experimental_option("prefs", {"download.default_directory": download_dir})
-        driver = Edge(options=options)
+        print("Running on local")
+        driver = webdriver.Firefox(options=firefox_options)
     return driver
 
 def browser_empleate(driver):
@@ -71,4 +65,5 @@ def browser_empleate(driver):
 
 if __name__ == "__main__":
     driver = get_configured_driver()
+    print("Driver Started")
     browser_empleate(driver)

@@ -9,9 +9,9 @@ Joaquín Sierra Granados: Backend
 Álvaro Ruiz Roldán: Frontend
 
 # Requisitos
-Será neceserio tener un driver dependiendo de tu navegador, de todas formas se encuentra los últimos de Edge y Firefox, siendo no necesario si tienes la última versión. Junto con un SSOO operativo Windows, debido a que ha sido con el que ha sido probado el proyecto.
+Será neceserio tener un driver dependiendo de tu navegador, de todas formas se encuentra los últimos de Edge y Firefox. 
 
-Es necesario crear un archivo en la carpeta src llamado secrets.json con el siguiente formato:
+Es necesario crear un archivo en la carpeta src llamado secrets.json con el siguiente formato, (en la entrega del campus se secrets.json para probarlo):
 ```
 {
     "Jooble": "Tu clave",
@@ -22,8 +22,15 @@ Es necesario crear un archivo en la carpeta src llamado secrets.json con el sigu
 Como el webscrapping ya fue ejecutado en su momento está toda la información guardada en el sql 
 "iberiajobs_trabajos.sql" y "iberiajobs_stats", asi que no hace falta ejecutar de nuevo los archivos .py de la carpeta Webscrapping.
 
-Ejecuta el comando "docker-compose up" sobre la carpeta raiz del proyecto, si sale un error de que el puerto 3306 está yá tomado, deberá borrar todos los procesos asociados al puerto 3306. Una vez terminada la instalación del proyecto en docker, solo habrá que abrir el index.html desde su navegador predeterminado.
  
+# Docker
+Ejecuta el comando "docker-compose up" sobre la carpeta raiz del proyecto, si sale un error de que el puerto 3306 está yá tomado, deberá borrar todos los procesos asociados al puerto 3306. Una vez terminada la instalación del proyecto en docker, solo habrá que abrir el index.html desde su navegador predeterminado.
+
+Para ejecutar el WebScrapping mediante docker es necesario primero ejecutar "docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" -v ruta/absoluta/a/carpeta/pdf_files:/home/seluser/Downloads selenium/standalone-firefox:latest", pero antest iene que descargar la imagen de selenium/standalone-firefox:latest.
+
+Esto creará una virtualización de firefox en el puerto 4444, que es el que se usa en el código para ejecutar el webscrapping, para consultar su funcionamiento tendrá poner esta dirección en su buscador: "http://localhost:7900/?autoconnect=1&resize=scale&password=secret". Ejecutar docker build -t empleate . en la carpeta /src/WebScrapping. Una vez terminado ejecutar docker run empleate.
+
+
 # Testing
 Para el testing será necesario tener instalado pytest, se tendrá que ejecutar desde la carpeta donde tengas los webdrivers con el comando:
 ```python -m pytest``` o ```pytest``` si estás en unix.
