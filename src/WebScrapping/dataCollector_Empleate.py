@@ -23,12 +23,16 @@ def get_configured_driver():
     }
     for option, value in prefs.items():
         firefox_options.set_preference(option, value)
-    if os.path.isdir('/proc/self/'):
+    election = input("Do you want to use a virtualized browser? (y/n): ")
+    if election == "y" or election == "Y":
         print("Running on Docker")
         driver = webdriver.Remote("http://127.0.0.1:4444/wd/hub",
         options=firefox_options)
-    else:
+    elif election == "n" or election == "N":
         print("Running on local")
+        driver = webdriver.Firefox(options=firefox_options)
+    else:
+        print("Invalid option, running on local")
         driver = webdriver.Firefox(options=firefox_options)
     return driver
 
